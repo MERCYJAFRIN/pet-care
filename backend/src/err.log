@@ -1,0 +1,26 @@
+[
+  {
+    "message": "license_number must be unique",
+    "type": "unique violation",
+    "path": "license_number",
+    "value": null,
+    "origin": "DB",
+    "instance": {
+      "createdAt": "2026-03-13T03:34:07.520Z",
+      "updatedAt": "2026-03-13T03:34:07.521Z",
+      "id": "512c2eb7-e1c9-43e7-9e41-031b66451597",
+      "experience": 0,
+      "isVerified": false,
+      "consultationFee": 500,
+      "rating": 0,
+      "availableDays": "Mon,Tue,Wed,Thu,Fri",
+      "availableTime": "09:00 AM - 05:00 PM",
+      "userId": "123e4567-e89b-12d3-a456-426614174000",
+      "specialization": "test",
+      "licenseNumber": "test"
+    },
+    "validatorKey": "not_unique",
+    "validatorName": null,
+    "validatorArgs": []
+  }
+]

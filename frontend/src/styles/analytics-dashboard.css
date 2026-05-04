@@ -1,0 +1,369 @@
+.analytics-dashboard {
+  padding: 20px;
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  min-height: 100vh;
+}
+
+.analytics-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.analytics-header h2 {
+  margin: 0;
+  color: #2c3e50;
+  font-size: 28px;
+}
+
+.pet-info {
+  text-align: right;
+}
+
+.pet-info h3 {
+  margin: 0;
+  color: #3498db;
+  font-size: 20px;
+}
+
+.pet-type {
+  display: block;
+  color: #7f8c8d;
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+.analytics-loading {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 400px;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.spinner {
+  border: 4px solid #f3f3f3;
+  border-top: 4px solid #3498db;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.analytics-loading p {
+  margin-top: 15px;
+  color: #7f8c8d;
+  font-size: 16px;
+}
+
+.analytics-error {
+  background: #fee;
+  border: 1px solid #fcc;
+  color: #c33;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+  margin: 20px 0;
+}
+
+.analytics-error button {
+  background: #3498db;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.period-selector {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  background: white;
+  padding: 15px 20px;
+  border-radius: 10px;
+  margin-bottom: 25px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.period-selector label {
+  font-weight: 600;
+  color: #2c3e50;
+}
+
+.period-selector select {
+  padding: 8px 12px;
+  border: 1px solid #bdc3c7;
+  border-radius: 6px;
+  font-size: 14px;
+  cursor: pointer;
+  background: white;
+  color: #2c3e50;
+}
+
+.period-selector select:hover {
+  border-color: #3498db;
+}
+
+.health-summary-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.summary-card {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.summary-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+}
+
+.summary-card h4 {
+  margin: 0 0 10px 0;
+  color: #7f8c8d;
+  font-size: 14px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.summary-card .stat-value {
+  margin: 10px 0;
+  font-size: 32px;
+  font-weight: 700;
+  color: #2c3e50;
+}
+
+.summary-card .stat-label {
+  display: block;
+  color: #95a5a6;
+  font-size: 12px;
+}
+
+.summary-card.alert {
+  border-left: 4px solid #e74c3c;
+  background: #fdeae9;
+}
+
+.summary-card.alert .stat-value {
+  color: #e74c3c;
+}
+
+.charts-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: 25px;
+  margin-bottom: 30px;
+}
+
+.chart-container {
+  background: white;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.chart-container.large {
+  grid-column: span 1;
+}
+
+.chart-container h3 {
+  margin: 0 0 20px 0;
+  color: #2c3e50;
+  font-size: 18px;
+  border-bottom: 2px solid #ecf0f1;
+  padding-bottom: 10px;
+}
+
+.no-data {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 250px;
+  color: #95a5a6;
+}
+
+.vaccine-stats {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+  padding-top: 20px;
+  border-top: 1px solid #ecf0f1;
+}
+
+.vaccine-stat {
+  text-align: center;
+  padding: 10px 15px;
+  border-radius: 8px;
+  background: #f8f9fa;
+}
+
+.vaccine-stat strong {
+  display: block;
+  font-size: 24px;
+  margin-bottom: 5px;
+}
+
+.vaccine-stat.completed strong {
+  color: #27ae60;
+}
+
+.vaccine-stat.pending strong {
+  color: #f39c12;
+}
+
+.vaccine-stat.overdue strong {
+  color: #e74c3c;
+}
+
+.vaccine-stat span {
+  display: block;
+  font-size: 12px;
+  color: #7f8c8d;
+}
+
+.medical-history-section,
+.upcoming-section {
+  background: white;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 25px;
+}
+
+.medical-history-section h3,
+.upcoming-section h3 {
+  margin: 0 0 20px 0;
+  color: #2c3e50;
+  font-size: 18px;
+  border-bottom: 2px solid #ecf0f1;
+  padding-bottom: 10px;
+}
+
+.history-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.history-item {
+  display: grid;
+  grid-template-columns: 100px 1fr 100px;
+  gap: 20px;
+  padding: 15px;
+  background: #f8f9fa;
+  border-radius: 8px;
+  align-items: center;
+}
+
+.history-date {
+  font-weight: 600;
+  color: #3498db;
+}
+
+.history-content h5 {
+  margin: 0 0 5px 0;
+  color: #2c3e50;
+}
+
+.history-content p {
+  margin: 0;
+  color: #7f8c8d;
+  font-size: 14px;
+}
+
+.history-status {
+  text-align: center;
+  padding: 5px 10px;
+  background: #27ae60;
+  color: white;
+  border-radius: 4px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.appointments-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.appointment-item {
+  display: grid;
+  grid-template-columns: 100px 80px 1fr;
+  gap: 20px;
+  padding: 15px;
+  background: #f8f9fa;
+  border-radius: 8px;
+  align-items: center;
+  border-left: 4px solid #3498db;
+}
+
+.apt-date {
+  font-weight: 600;
+  color: #3498db;
+}
+
+.apt-time {
+  color: #7f8c8d;
+  font-size: 14px;
+}
+
+.apt-veterinarian {
+  color: #2c3e50;
+  font-weight: 500;
+}
+
+@media (max-width: 768px) {
+  .analytics-dashboard {
+    padding: 10px;
+  }
+
+  .analytics-header {
+    flex-direction: column;
+    text-align: center;
+    gap: 15px;
+  }
+
+  .pet-info {
+    text-align: center;
+  }
+
+  .charts-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .health-summary-cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .history-item,
+  .appointment-item {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+
+  .vaccine-stats {
+    flex-wrap: wrap;
+  }
+}

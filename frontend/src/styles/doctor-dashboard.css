@@ -1,0 +1,398 @@
+/* Doctor Dashboard Styles */
+.doctor-dashboard {
+  padding: 1rem;
+}
+
+.doctor-welcome {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 2rem;
+}
+
+.welcome-text h1 {
+  font-size: 1.8rem;
+  margin-bottom: 0.5rem;
+  color: var(--text-main);
+}
+
+.welcome-text p {
+  color: var(--text-dim);
+  font-size: 0.95rem;
+}
+
+.doctor-actions-top {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.rating-badge {
+  background: rgba(255, 193, 7, 0.1);
+  color: #ffc107;
+  padding: 0.4rem 0.8rem;
+  border-radius: 20px;
+  font-weight: 500;
+  font-size: 0.9rem;
+  display: flex;
+  gap: 0.4rem;
+  align-items: center;
+}
+
+.stats-grid-doctor {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.stat-card-doc {
+  background: var(--bg-card);
+  padding: 1.5rem;
+  border-radius: 12px;
+  border: 1px solid var(--border);
+  display: flex;
+  flex-direction: column;
+}
+
+.stat-card-doc .stat-title {
+  color: var(--text-dim);
+  font-size: 0.85rem;
+  font-weight: 500;
+  margin-bottom: 0.8rem;
+}
+
+.stat-card-doc .stat-value {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--text-main);
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.stat-icon {
+  font-size: 1.5rem;
+}
+
+.dashboard-content-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 2rem;
+}
+
+.appointments-section h2 {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.appointments-list {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 1.5rem;
+  overflow-x: auto;
+  padding-bottom: 1rem;
+}
+
+.appt-card-modern {
+  min-width: 300px;
+  background: var(--bg-card);
+  border-radius: 12px;
+  border-left: 4px solid var(--primary);
+  border: 1px solid var(--border);
+  border-left-width: 4px;
+  padding: 1.2rem;
+  position: relative;
+}
+
+.appt-card-modern.cancelled {
+  border-left-color: #ff6b6b;
+}
+
+.appt-card-modern.accepted {
+  border-left-color: #38bdf8;
+}
+
+.appt-card-modern.completed {
+  border-left-color: #4ade80;
+}
+
+.appt-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.appt-pet-name {
+  font-weight: 600;
+  font-size: 1.1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.appt-status-badge {
+  font-size: 0.7rem;
+  padding: 0.2rem 0.6rem;
+  border-radius: 20px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.badge-cancelled {
+  background: rgba(255, 107, 107, 0.1);
+  color: #ff6b6b;
+}
+
+.badge-accepted {
+  background: rgba(56, 189, 248, 0.1);
+  color: #38bdf8;
+}
+
+.badge-completed {
+  background: rgba(74, 222, 128, 0.1);
+  color: #4ade80;
+}
+
+.appt-details-modern {
+  margin-bottom: 1.5rem;
+}
+
+.detail-row {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--text-dim);
+  font-size: 0.9rem;
+  margin-bottom: 0.5rem;
+}
+
+.appt-actions-modern {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.btn-appt-primary, .btn-appt-secondary, .btn-appt-danger {
+  padding: 0.6rem 1rem;
+  border-radius: 8px;
+  font-weight: 500;
+  font-size: 0.85rem;
+  cursor: pointer;
+  border: none;
+  flex: 1;
+}
+
+.btn-appt-primary {
+  background: #3b82f6;
+  color: white;
+}
+
+.btn-appt-secondary {
+  background: #475569;
+  color: white;
+}
+
+.btn-appt-danger {
+  background: transparent;
+  color: #ef4444;
+  border: 1px solid #fca5a5;
+}
+
+.btn-appt-success {
+  background: #10b981;
+  color: white;
+  padding: 0.6rem 1rem;
+  border-radius: 8px;
+  border: none;
+  font-weight: 600;
+  width: 100%;
+}
+
+.payment-status {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: #10b981;
+  font-size: 0.85rem;
+  font-weight: 500;
+  margin-bottom: 1rem;
+  justify-content: center;
+}
+
+.reminders-panel {
+  background: var(--bg-card);
+  border-radius: 12px;
+  padding: 1.5rem;
+  border: 1px solid var(--border);
+  height: fit-content;
+}
+
+.reminders-panel h3 {
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.reminder-item {
+  background: rgba(255, 255, 255, 0.03);
+  border-left: 3px solid var(--secondary);
+  padding: 1rem;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+
+.reminder-title {
+  font-weight: 600;
+  color: var(--text-main);
+  margin-bottom: 0.2rem;
+  font-size: 0.95rem;
+}
+
+.reminder-time {
+  color: var(--text-dim);
+  font-size: 0.8rem;
+}
+
+/* Vaults / Patients UI */
+.doctor-patients-tab h2 {
+  font-size: 1.2rem;
+  margin-bottom: 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.patients-vault-grid {
+  display: flex;
+  gap: 1.5rem;
+  overflow-x: auto;
+  padding-bottom: 1rem;
+}
+
+.vault-card {
+  min-width: 250px;
+  background: var(--bg-card);
+  border-radius: 16px;
+  padding: 1.5rem;
+  border: 1px solid var(--border);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.vault-avatar {
+  width: 60px;
+  height: 60px;
+  background: var(--primary);
+  color: white;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.vault-avatar.S { background: #38bdf8; }
+.vault-avatar.L { background: #0ea5e9; }
+.vault-avatar.B { background: #0284c7; }
+
+.vault-name {
+  font-weight: 700;
+  font-size: 1.2rem;
+  margin-bottom: 0.2rem;
+  color: var(--text-main);
+}
+
+.vault-details {
+  color: var(--text-dim);
+  font-size: 0.85rem;
+  margin-bottom: 1.5rem;
+}
+
+.btn-open-vault {
+  width: 100%;
+  padding: 0.6rem;
+  background: transparent;
+  color: var(--secondary);
+  border: 1px solid var(--secondary);
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  transition: all 0.2s;
+}
+
+.btn-open-vault:hover {
+  background: rgba(99, 102, 241, 0.1);
+}
+
+/* Modal specific styles */
+.vault-modal-content {
+  padding: 1.5rem;
+}
+
+.vault-header {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.vault-info p {
+  margin-bottom: 0.8rem;
+  font-size: 1rem;
+}
+
+.vault-section {
+  margin-top: 1.5rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid #e2e8f0;
+}
+
+.vault-section h4 {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+  font-size: 1.1rem;
+}
+
+.tracker-list li {
+  margin-bottom: 0.5rem;
+  font-size: 0.95rem;
+}
+
+.tracker-list span.completed { color: #10b981; }
+.tracker-list span.pending { color: #f59e0b; }
+
+.medical-history-box {
+  background: rgba(255, 255, 255, 0.03);
+  padding: 1.5rem;
+  border-radius: 12px;
+  margin-top: 1rem;
+  border: 1px solid var(--border);
+}
+
+.btn-close-vault {
+  width: 100%;
+  padding: 1rem;
+  background: #0f172a;
+  color: white;
+  border: none;
+  border-radius: 12px;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-top: 2rem;
+}

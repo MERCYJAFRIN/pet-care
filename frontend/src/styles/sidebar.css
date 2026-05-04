@@ -1,0 +1,130 @@
+.paw-sidebar {
+  width: 260px;
+  background: #ffffff;
+  border-right: 1px solid #f0f0f0;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  position: sticky;
+  top: 0;
+  font-family: var(--font-main);
+  color: #333;
+}
+
+.sidebar-logo {
+  padding: 2rem;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 1.25rem;
+  font-weight: 800;
+  color: #111;
+}
+
+.logo-icon-paw {
+  font-size: 1.5rem;
+}
+
+.sidebar-scroll {
+  flex: 1;
+  overflow-y: auto;
+  padding: 0 1.5rem;
+}
+
+.sidebar-menu-group {
+  margin-bottom: 2rem;
+}
+
+.menu-group-title {
+  font-size: 0.75rem;
+  color: #999;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 1rem;
+  padding-left: 0.5rem;
+}
+
+.sidebar-link {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: 0.75rem 1rem;
+  border: none;
+  background: transparent;
+  color: #666;
+  font-size: 0.95rem;
+  font-weight: 500;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.2s;
+  text-align: left;
+  margin-bottom: 0.25rem;
+}
+
+.sidebar-link .icon {
+  margin-right: 12px;
+  font-size: 1.1rem;
+  opacity: 0.7;
+}
+
+.sidebar-link:hover {
+  background: #f8f9fa;
+  color: #111;
+}
+
+.sidebar-link.active {
+  background: #000;
+  color: #fff;
+  font-weight: 600;
+}
+
+.sidebar-link.active .icon {
+  opacity: 1;
+}
+
+.sidebar-link .badge {
+  margin-left: auto;
+  background: #ff4757;
+  color: white;
+  font-size: 0.75rem;
+  padding: 2px 8px;
+  border-radius: 20px;
+  font-weight: 700;
+}
+
+.sidebar-footer {
+  padding: 1.5rem;
+  border-top: 1px solid #f0f0f0;
+}
+
+.sidebar-logout {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: 0.75rem;
+  background: transparent;
+  border: none;
+  color: #ff4757;
+  font-weight: 600;
+  cursor: pointer;
+  transition: opacity 0.2s;
+}
+
+.sidebar-logout .icon {
+  margin-right: 10px;
+}
+
+.sidebar-logout:hover {
+  opacity: 0.8;
+}
+
+/* Scrollbar for sidebar */
+.sidebar-scroll::-webkit-scrollbar {
+  width: 4px;
+}
+
+.sidebar-scroll::-webkit-scrollbar-thumb {
+  background: #eee;
+  border-radius: 4px;
+}

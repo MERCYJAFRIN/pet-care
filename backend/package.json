@@ -1,0 +1,35 @@
+{
+  "name": "pet-care-backend",
+  "version": "1.0.0",
+  "description": "Pet Care App Backend - Node.js with Express and H2 Database",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "nodemon src/server.js",
+    "test": "jest"
+  },
+  "keywords": [
+    "pet-care",
+    "h2-database",
+    "express"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "jsonwebtoken": "^9.0.0",
+    "mongoose": "^9.3.0",
+    "node-cron": "^3.0.2",
+    "razorpay": "^2.9.1",
+    "sequelize": "^6.35.0",
+    "sqlite3": "^5.1.7",
+    "uuid": "^9.0.0"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0",
+    "nodemon": "^3.1.14"
+  }
+}
