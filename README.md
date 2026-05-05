@@ -1,5 +1,7 @@
 # Pet Care App - Full Stack Application
 
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2FMERCYJAFRIN%2Fpet-care&root-directory=frontend)
+
 A comprehensive pet care management application built with React, Node.js/Express, and H2 database.
 
 ## Overview
