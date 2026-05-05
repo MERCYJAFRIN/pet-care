@@ -15,11 +15,12 @@ services:
         value: 5000
 
   # Frontend Static Site
-  - type: static
+  - type: web
     name: pet-care-frontend
+    runtime: static
     rootDir: frontend
     buildCommand: npm install && npm run build
-    publishDir: dist
+    staticPublishPath: dist
     envVars:
       - key: VITE_API_URL
-        value: https://pet-care-backend.onrender.com/api # You can update this after backend is live
+        value: https://pet-care-backend.onrender.com/api
