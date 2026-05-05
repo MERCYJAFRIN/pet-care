@@ -42,11 +42,16 @@ sequelize.afterConnect((connection, config) => {
 sequelize.authenticate()
   .then(() => {
     console.log('✓ Database connection established successfully');
-    // Disable foreign keys after connecting
-    return sequelize.query('PRAGMA foreign_keys = OFF');
+    // Disable foreign keys ONLY for SQLite
+    if (sequelize.getDialect() === 'sqlite') {
+      return sequelize.query('PRAGMA foreign_keys = OFF');
+    }
+    return Promise.resolve();
   })
   .then(() => {
-    console.log('✓ Foreign keys disabled for SQLite');
+    if (sequelize.getDialect() === 'sqlite') {
+      console.log('✓ Foreign keys disabled for SQLite');
+    }
   })
   .catch(err => {
     console.error('✗ Unable to connect to the database:', err);
