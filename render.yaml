@@ -20,7 +20,7 @@ services:
     runtime: static
     rootDir: frontend
     buildCommand: npm install && npm run build
-    staticPublishDir: dist
+    publishDir: dist
     envVars:
       - key: VITE_API_URL
         value: https://pet-care-backend.onrender.com/api # You can update this after backend is live
