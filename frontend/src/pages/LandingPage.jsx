@@ -181,7 +181,7 @@ const LandingPage = ({ onAuthClick }) => {
               <p>Connect with expert veterinarians instantly via video or chat for nutrition, illness, or behavioral advice.</p>
               <button className="btn-book-sm" onClick={() => onAuthClick('login')}>Consult Now</button>
             </div>
-            <img src="/src/assets/vet_consultation_modern.png" alt="Online Vet" className="banner-img" />
+            <img src="https://images.unsplash.com/photo-1628333165554-d5338604753f?w=800" alt="Online Vet" className="banner-img" />
           </div>
 
           <div className="service-banner-card clinic">
@@ -199,7 +199,7 @@ const LandingPage = ({ onAuthClick }) => {
               <p>Book professional pet grooming, nail trimming, and health sample collection right at your doorstep.</p>
               <button className="btn-book-sm" onClick={() => onAuthClick('login')}>Book Service</button>
             </div>
-            <img src="/src/assets/pet_grooming_professional.png" alt="At Home Grooming" className="banner-img" />
+            <img src="https://images.unsplash.com/photo-1516733725897-1aa73b87c8e8?w=800" alt="At Home Grooming" className="banner-img" />
           </div>
         </div>
       </section>
@@ -214,7 +214,7 @@ const LandingPage = ({ onAuthClick }) => {
           <div className="gallery-item"><img src="https://images.unsplash.com/photo-1516733725897-1aa73b87c8e8?w=400" alt="Moment 2" /></div>
           <div className="gallery-item"><img src="https://images.unsplash.com/photo-1544568100-847a948585b9?w=400" alt="Moment 3" /></div>
           <div className="gallery-item wide"><img src="https://images.unsplash.com/photo-1583337130417-3346a1be7dee?w=800" alt="Moment 4" /></div>
-          <div className="gallery-item"><img src="/src/assets/moment5.png" alt="Moment 5" /></div>
+          <div className="gallery-item"><img src="https://images.unsplash.com/photo-1583337130417-3346a1be7dee?w=400" alt="Moment 5" /></div>
         </div>
       </section>
 
