@@ -181,7 +181,7 @@ const LandingPage = ({ onAuthClick }) => {
               <p>Connect with expert veterinarians instantly via video or chat for nutrition, illness, or behavioral advice.</p>
               <button className="btn-book-sm" onClick={() => onAuthClick('login')}>Consult Now</button>
             </div>
-            <img src="https://images.unsplash.com/photo-1576201836106-db1758fd1c97?w=800" alt="Online Vet" className="banner-img" />
+            <img src="https://images.unsplash.com/photo-1628333165554-d5338604753f?w=800" alt="Online Vet" className="banner-img" />
           </div>
 
           <div className="service-banner-card clinic">
